@@ -2,9 +2,10 @@ import { Router } from "express";
 import {
     createTodo,
     getAllTodos,
-    deleteTodoById
+    deleteTodoById,
+    updateTodoById,
+    getTodoById
 } from "./methods.js";
-import { getTodoById, updateTodoById } from "./newMethods";
 
 const forwardRouter = Router();
 forwardRouter.post("/todos", createTodo);
